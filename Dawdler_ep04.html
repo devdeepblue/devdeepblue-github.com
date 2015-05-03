@@ -1,0 +1,189 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Dawdler ep04. 슬픔이 없는 15초</title>
+		<script type='text/javascript' src='https://ssl-webplayer.unity3d.com/download_webplayer-3.x/3.0/uo/jquery.min.js'></script>
+		<script type="text/javascript">
+		<!--
+		var unityObjectUrl = "http://webplayer.unity3d.com/download_webplayer-3.x/3.0/uo/UnityObject2.js";
+		if (document.location.protocol == 'https:')
+			unityObjectUrl = unityObjectUrl.replace("http://", "https://ssl-");
+		document.write('<script type="text\/javascript" src="' + unityObjectUrl + '"><\/script>');
+		-->
+		</script>
+		<script type="text/javascript">
+		<!--
+			var config = {
+				width: 720, 
+				height: 450,
+				params: { enableDebugging:"0" }
+				
+			};
+			var u = new UnityObject2(config);
+			
+			jQuery(function() {
+
+				var $missingScreen = jQuery("#unityPlayer").find(".missing");
+				var $brokenScreen = jQuery("#unityPlayer").find(".broken");
+				$missingScreen.hide();
+				$brokenScreen.hide();
+
+				u.observeProgress(function (progress) {
+					switch(progress.pluginStatus) {
+						case "broken":
+							$brokenScreen.find("a").click(function (e) {
+								e.stopPropagation();
+								e.preventDefault();
+								u.installPlugin();
+								return false;
+							});
+							$brokenScreen.show();
+						break;
+						case "missing":
+							$missingScreen.find("a").click(function (e) {
+								e.stopPropagation();
+								e.preventDefault();
+								u.installPlugin();
+								return false;
+							});
+							$missingScreen.show();
+						break;
+						case "installed":
+							$missingScreen.remove();
+						break;
+						case "first":
+						break;
+					}
+				});
+				u.initPlugin(jQuery("#unityPlayer")[0], "Dawdler_ep04.unity3d");
+			});
+		-->
+		</script>
+		<style type="text/css">
+		<!--
+		body {
+			font-family: Helvetica, Verdana, Arial, sans-serif;
+			background-color: black;
+			color: white;
+			text-align: center;
+		}
+		a:link, a:visited {
+			color: #bfbfbf;
+		}
+		a:active, a:hover {
+			color: #bfbfbf;
+		}
+		p.header {
+			font-size: small;
+		}
+		p.header span {
+			font-weight: bold;
+		}
+		p.footer {
+			font-size: x-small;
+		}
+		div.content {
+			margin: auto;
+			width: 720px;
+		}
+		div.broken,
+		div.missing {
+			margin: auto;
+			position: relative;
+			top: 50%;
+			width: 193px;
+		}
+		div.broken a,
+		div.missing a {
+			height: 63px;
+			position: relative;
+			top: -31px;
+		}
+		div.broken img,
+		div.missing img {
+			border-width: 0px;
+		}
+		div.broken {
+			display: none;
+		}
+		div#unityPlayer {
+			cursor: default;
+			height: 450px;
+			width: 720px;
+		}
+		-->
+		</style>
+	</head>
+	<body>
+		<p class="header"><span>Dawdler ep04. | </span>슬픔이 없는 십오초.</p>
+		<div class="content">
+			<div id="unityPlayer">
+				<div class="missing">
+					<a href="http://unity3d.com/webplayer/" title="Unity Web Player. Install now!">
+						<img alt="Unity Web Player. Install now!" src="http://webplayer.unity3d.com/installation/getunity.png" width="193" height="63" />
+					</a>
+				</div>
+			</div>
+		</div>
+		<p class="footer">&laquo; created with <a href="http://unity3d.com/unity/" title="Go to unity3d.com">Unity</a> &raquo;</p>
+
+
+
+<br><br><br><br><br>
+
+<h2> 슬픔이 없는 십오초 </h2>
+		
+<br>아득한 고층 아파트 위
+<br>  태양이 가슴을 쥐어뜯으며
+<br>  낮달 옆에서 어찌할 바를 모른다
+<br>  치욕에 관한 한 세상은 멸망한 지 오래다
+<br>  가끔 슬픔 없이 십오 초 정도가 지난다
+<br>  가능한 모든 변명들을 대면서
+<br>  길들이 사방에서 휘고 있다
+<br>  그림자 거뭇한 길가에 쌓이는 침묵
+<br>  거기서 초 단위로 조용히 늙고 싶다
+<br>  늙어가는 모든 존재는 비가 샌다
+<br>  비가 새는 모든 늙은 존재들이
+<br>  새 지붕을 얹듯 사랑을 꿈꾼다
+<br>  누구나 잘 안다 이렇게 된 것은
+<br>  이렇게 될 수밖에 없었던 것이다
+<br>  태양이 온 힘을 다해 빛을 쥐어짜내는 오후
+<br>  과거가 뒷걸음질 치다 아파트 난간 아래로
+<br>  떨어진다 미래도 곧이어 그 뒤를 따른다
+<br>  현재는 다만 꽃의 나날 꽃의 나날은
+<br>  꽃이 피고 지는 시간이어서 슬프다
+<br>  고양이가 꽃잎을 냠냠 뜯어먹고 있다
+<br>  여자가 카모밀 차를 홀짝거리고 있다
+<br>  고요하고 평화로운 듯도 하다
+<br>  나는 길 가운데 우두커니 서 있다
+<br>  남자가 울면서 자전거를 타고 지나간다
+<br>  궁극적으로 넘어질 운명의 인간이다
+<br>  현기증이 만발하는 머릿속 꿈 동산
+<br>  이제 막 슬픔 없이 십오 초 정도가 지났다
+<br>  어디로든 발걸음을 옮겨야 하겠으나
+<br>  어디로든 끝간에는 사라지는 길이다
+<br>
+<br> 슬픔이 없는 십오 초, 심보선
+
+<br><br><br><br><br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</body>
+</html>
